@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/pqrs-org/cpp-sign.svg?branch=master)](https://travis-ci.com/pqrs-org/cpp-sign)
+[![Build Status](https://github.com/pqrs-org/cpp-sign/workflows/CI/badge.svg)](https://github.com/pqrs-org/cpp-sign/actions)
 [![License](https://img.shields.io/badge/license-Boost%20Software%20License-blue.svg)](https://github.com/pqrs-org/cpp-sign/blob/master/LICENSE.md)
 
 # cpp-sign
