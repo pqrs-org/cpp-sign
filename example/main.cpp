@@ -1,7 +1,7 @@
 #include <iostream>
 #include <pqrs/sign.hpp>
 
-int main(void) {
+int main() {
   auto sign = pqrs::make_sign(100);
 
   if (sign == pqrs::sign::plus) {

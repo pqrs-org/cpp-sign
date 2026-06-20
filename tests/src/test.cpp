@@ -1,7 +1,19 @@
 #include <boost/ut.hpp>
 #include <pqrs/sign.hpp>
 
-int main(void) {
+template <typename T>
+concept can_make_sign = requires(T value) {
+  pqrs::make_sign(value);
+};
+
+static_assert(pqrs::make_sign(100) == pqrs::sign::plus);
+static_assert(pqrs::make_sign(0) == pqrs::sign::zero);
+static_assert(pqrs::make_sign(-100) == pqrs::sign::minus);
+static_assert(can_make_sign<int>);
+static_assert(can_make_sign<double>);
+static_assert(!can_make_sign<bool>);
+
+int main() {
   using namespace boost::ut;
   using namespace boost::ut::literals;
 
