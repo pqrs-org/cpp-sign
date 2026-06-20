@@ -3,7 +3,7 @@
 #include <concepts>
 #include <type_traits>
 
-// pqrs::sign v1.0
+// pqrs::sign v1.1.0
 
 // (C) Copyright Takayama Fumihiko 2019.
 // Distributed under the Boost Software License, Version 1.0.
